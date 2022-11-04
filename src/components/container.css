@@ -1,0 +1,22 @@
+.container-root {
+  display: block;
+  margin: 0.2rem;
+  padding: 0.3rem;
+  background-color: rgb(68, 68, 68);
+  background: url("../images/Tibia_Client_Background_dark.gif");
+  border-top: 2px solid #777;
+  border-left: 2px solid #777;
+  border-bottom: 2px solid #222;
+  border-right: 2px solid #222;
+  color: var(--texto-principal);
+}
+
+.container-root .container-title {
+  color: var(--texto-titulo);
+}
+.container-root .container-content {
+  width: calc(100% - .4rem);
+  min-height: 50px;
+  padding: .2rem;
+  background: url(../images/Tibia_Client_Background.gif);
+}
