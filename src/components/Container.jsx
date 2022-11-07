@@ -1,6 +1,6 @@
 import "./container.css";
 
-export function Container({ title = "", text="" }) {
+export function Container({ title = "", align="start", children}) {
   return (
     <div className="container container-root">
       {title.length > 0 && (
@@ -8,8 +8,8 @@ export function Container({ title = "", text="" }) {
           <span>{title}</span>
         </div>
       )}
-      <div className="container-content">
-        <h2>{text}</h2>
+      <div className={`container-content ${align=='start'?'align-start':'align-center'}`}>
+        {children}
       </div>
     </div>
   );

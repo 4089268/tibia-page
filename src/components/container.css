@@ -15,8 +15,19 @@
   color: var(--texto-titulo);
 }
 .container-root .container-content {
-  width: calc(100% - .4rem);
+  width: calc(100% - 0.4rem);
   min-height: 50px;
-  padding: .2rem;
+  padding: 0.2rem;
   background: url(../images/Tibia_Client_Background.gif);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.container-root .container-content.align-center {
+  align-items: center;
+}
+.container-root .container-content.align-start {
+  align-items: flex-start;
 }
